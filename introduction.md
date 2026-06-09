@@ -1,8 +1,28 @@
-# Introduction to Vellix Hosting
+---
+title: "Introduction"
+sidebarTitle: "Introduction"
+description: "Welcome to Vellix Hosting client documentation"
+---
 
-Welcome to the **Vellix Hosting** client documentation! Here you will find step-by-step guides on how to manage, configure, secure, and customize your game servers.
+<div className="text-center max-w-2xl mx-auto my-12">
+  <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">Documentation</h1>
+  <p className="text-lg text-gray-400">Welcome to the next generation of game server hosting. Fast, secure, and built for players and creators.</p>
+</div>
 
-Our services run on the **Reviactyl** panel, a next-generation server management interface designed for maximum performance, ease of use, and security through isolated Docker containers.
+<CardGroup cols={2}>
+  <Card title="Quickstart" icon="rocket" href="/getting-started/access">
+    Get your server up and running in minutes with our step-by-step onboarding guide.
+  </Card>
+  <Card title="Server Management" icon="gears" href="/management/console">
+    Configure your server, upload files via SFTP, and manage your console live.
+  </Card>
+  <Card title="Databases & Backups" icon="database" href="/databases/mysql">
+    Provision MySQL databases for plugins and schedule automatic backups.
+  </Card>
+  <Card title="Customization" icon="puzzle-piece" href="/customization/install-mods">
+    Install mods, invite team members, and tailor your gaming experience.
+  </Card>
+</CardGroup>
 
 ---
 
@@ -18,25 +38,6 @@ To help you manage your services efficiently, we recommend bookmarking the follo
 | **Discord Support** | [discord.com/vellix](https://discord.com/invite/EkzDkWNRXp) | Join our community, read updates, and open support tickets. |
 
 ---
-
-## Documentation Structure
-
-This documentation is organized into four main sections to help you find what you need quickly:
-
-<CardGroup cols={2}>
-  <Card title="Getting Started" icon="rocket">
-    Learn how to log in for the first time, retrieve your credentials, and secure your account with 2FA.
-  </Card>
-  <Card title="Server Management" icon="gears">
-    Utilize the live server console, navigate the web file manager, and transfer data via SFTP.
-  </Card>
-  <Card title="Databases & Backups" icon="database">
-    Provision MySQL databases for your game plugins and automate server backups.
-  </Card>
-  <Card title="Customization & Team" icon="puzzle-piece">
-    Install mods/plugins (Minecraft, Rust, etc.) and invite subusers with granular permissions.
-  </Card>
-</CardGroup>
 
 > [!TIP]
 > Need specialized support? Our technical team is available 24/7. Open a ticket in our [Discord Server](https://discord.com/invite/EkzDkWNRXp) and we will assist you as soon as possible.

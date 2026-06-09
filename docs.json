@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "palm",
   "name": "Vellix Hosting",
   "logo": {
     "light": "/logo/light.svg",
@@ -13,49 +13,201 @@
     "dark": "#6b21a8"
   },
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Documentation",
-        "groups": [
+        "language": "en",
+        "tabs": [
           {
-            "group": "Getting Started",
-            "pages": [
-              "introduction",
-              "getting-started/access",
-              "getting-started/security",
-              "getting-started/billing"
+            "tab": "Documentation",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "pages": [
+                  "introduction",
+                  "getting-started/access",
+                  "getting-started/security",
+                  "getting-started/billing"
+                ]
+              },
+              {
+                "group": "Server Management",
+                "pages": [
+                  "management/console",
+                  "management/server-settings",
+                  "management/files",
+                  "management/sftp",
+                  "management/optimization"
+                ]
+              },
+              {
+                "group": "Databases & Backups",
+                "pages": [
+                  "databases/mysql",
+                  "backups/backups"
+                ]
+              },
+              {
+                "group": "Customization & Team",
+                "pages": [
+                  "customization/install-mods",
+                  "collaboration/subusers"
+                ]
+              }
             ]
           },
           {
-            "group": "Server Management",
+            "tab": "Changelog",
             "pages": [
-              "management/console",
-              "management/server-settings",
-              "management/files",
-              "management/sftp",
-              "management/optimization"
-            ]
-          },
-          {
-            "group": "Databases & Backups",
-            "pages": [
-              "databases/mysql",
-              "backups/backups"
-            ]
-          },
-          {
-            "group": "Customization & Team",
-            "pages": [
-              "customization/install-mods",
-              "collaboration/subusers"
+              "changelog/overview"
             ]
           }
         ]
       },
       {
-        "tab": "Changelog",
-        "pages": [
-          "changelog/overview"
+        "language": "es",
+        "tabs": [
+          {
+            "tab": "Documentación",
+            "groups": [
+              {
+                "group": "Primeros Pasos",
+                "pages": [
+                  "es/introduction",
+                  "es/getting-started/access",
+                  "es/getting-started/security",
+                  "es/getting-started/billing"
+                ]
+              },
+              {
+                "group": "Gestión del Servidor",
+                "pages": [
+                  "es/management/console",
+                  "es/management/server-settings",
+                  "es/management/files",
+                  "es/management/sftp",
+                  "es/management/optimization"
+                ]
+              },
+              {
+                "group": "Bases de Datos y Copias",
+                "pages": [
+                  "es/databases/mysql",
+                  "es/backups/backups"
+                ]
+              },
+              {
+                "group": "Personalización y Equipo",
+                "pages": [
+                  "es/customization/install-mods",
+                  "es/collaboration/subusers"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Historial de Cambios",
+            "pages": [
+              "es/changelog/overview"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "pt",
+        "tabs": [
+          {
+            "tab": "Documentação",
+            "groups": [
+              {
+                "group": "Primeiros Passos",
+                "pages": [
+                  "pt/introduction",
+                  "pt/getting-started/access",
+                  "pt/getting-started/security",
+                  "pt/getting-started/billing"
+                ]
+              },
+              {
+                "group": "Gerenciamento do Servidor",
+                "pages": [
+                  "pt/management/console",
+                  "pt/management/server-settings",
+                  "pt/management/files",
+                  "pt/management/sftp",
+                  "pt/management/optimization"
+                ]
+              },
+              {
+                "group": "Bancos de Dados e Backups",
+                "pages": [
+                  "pt/databases/mysql",
+                  "pt/backups/backups"
+                ]
+              },
+              {
+                "group": "Customização e Equipe",
+                "pages": [
+                  "pt/customization/install-mods",
+                  "pt/collaboration/subusers"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Registro de Alterações",
+            "pages": [
+              "pt/changelog/overview"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "fr",
+        "tabs": [
+          {
+            "tab": "Documentation",
+            "groups": [
+              {
+                "group": "Premiers Pas",
+                "pages": [
+                  "fr/introduction",
+                  "fr/getting-started/access",
+                  "fr/getting-started/security",
+                  "fr/getting-started/billing"
+                ]
+              },
+              {
+                "group": "Gestion du Serveur",
+                "pages": [
+                  "fr/management/console",
+                  "fr/management/server-settings",
+                  "fr/management/files",
+                  "fr/management/sftp",
+                  "fr/management/optimization"
+                ]
+              },
+              {
+                "group": "Bases de Données & Sauvegardes",
+                "pages": [
+                  "fr/databases/mysql",
+                  "fr/backups/backups"
+                ]
+              },
+              {
+                "group": "Personnalisation & Équipe",
+                "pages": [
+                  "fr/customization/install-mods",
+                  "fr/collaboration/subusers"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Journal des Modifications",
+            "pages": [
+              "fr/changelog/overview"
+            ]
+          }
         ]
       }
     ]
@@ -75,7 +227,92 @@
   },
   "footer": {
     "socials": {
-      "discord": "https://discord.com/invite/EkzDkWNRXp"
-    }
+      "x": "https://twitter.com/vellixhosting",
+      "youtube": "https://youtube.com/@vellixhosting",
+      "instagram": "https://instagram.com/vellixhosting",
+      "facebook": "https://facebook.com/vellixhosting",
+      "discord": "https://discord.gg/EkzDkWNRXp"
+    },
+    "columns": [
+      {
+        "header": "Services",
+        "items": [
+          {
+            "label": "Minecraft Hosting",
+            "href": "https://vellix.host/#configurator"
+          },
+          {
+            "label": "Game Servers",
+            "href": "https://vellix.host/game-servers"
+          },
+          {
+            "label": "Ultimate Series",
+            "href": "https://vellix.host/features"
+          },
+          {
+            "label": "Client Area",
+            "href": "https://billing.vellix.host/cart.php"
+          }
+        ]
+      },
+      {
+        "header": "Company",
+        "items": [
+          {
+            "label": "About Us",
+            "href": "https://vellix.host/about"
+          },
+          {
+            "label": "Why Choose Us",
+            "href": "https://vellix.host/why-us"
+          },
+          {
+            "label": "Creator Program",
+            "href": "https://vellix.host/partners"
+          },
+          {
+            "label": "Locations",
+            "href": "https://vellix.host/#location"
+          },
+          {
+            "label": "Server Hardware",
+            "href": "https://vellix.host/server-hardware"
+          },
+          {
+            "label": "Status",
+            "href": "https://status.vellix.host"
+          },
+          {
+            "label": "Contact",
+            "href": "https://vellix.host/contact"
+          }
+        ]
+      },
+      {
+        "header": "Support",
+        "items": [
+          {
+            "label": "Open Ticket",
+            "href": "https://billing.vellix.host/submitticket.php"
+          },
+          {
+            "label": "Knowledgebase",
+            "href": "https://billing.vellix.host/knowledgebase.php"
+          },
+          {
+            "label": "Control Panel",
+            "href": "https://panel.vellix.host"
+          },
+          {
+            "label": "Control Panel Tour",
+            "href": "https://vellix.host/panel-tour"
+          },
+          {
+            "label": "Official Discord",
+            "href": "https://discord.gg/EkzDkWNRXp"
+          }
+        ]
+      }
+    ]
   }
 }
