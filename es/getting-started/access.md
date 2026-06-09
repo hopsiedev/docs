@@ -1,44 +1,48 @@
-# Accessing the Panel
+---
+title: "Acceso al Panel"
+sidebarTitle: "Acceso al Panel"
+description: "Aprende cómo acceder a tu panel de control por primera vez"
+---
 
-After purchasing a game server at Vellix Hosting, our automated system installs your server instance and sends a welcome email containing your login details.
+Después de comprar un servidor de juegos en Vellix Hosting, nuestro sistema automatizado instala tu instancia de servidor y te envía un correo electrónico de bienvenida con tus datos de inicio de sesión.
 
-Follow these steps to access your panel for the first time:
+Sigue estos pasos para acceder a tu panel por primera vez:
 
 ---
 
-## Step 1: Retrieve Your Credentials
+## Paso 1: Recupera tus Credenciales
 
-Check the inbox of the email address you used during checkout on our billing area (remember to check your **SPAM** or **Junk** folders just in case). 
+Revisa la bandeja de entrada del correo electrónico que utilizaste al realizar el pago en nuestro área de facturación (recuerda revisar tus carpetas de **SPAM** o **Correo no deseado** por si acaso).
 
-Look for an email with the subject: **"Your Game Server is Ready - Access Details"**.
+Busca un correo electrónico con el asunto: **"Tu servidor de juegos está listo - Detalles de acceso"**.
 
-Inside this email, you will find:
-* **Panel URL**: [https://panel.vellix.host](https://panel.vellix.host)
-* **Username / Email**: Your registered email address.
-* **Temporary Password**: A secure, auto-generated password.
-
----
-
-## Step 2: Logging in to Reviactyl
-
-1. Click on the link [panel.vellix.host](https://panel.vellix.host) to open the login screen.
-2. Enter your email address and the temporary password provided in the email.
-3. Click the **"Login"** button.
+Dentro de este correo electrónico, encontrarás:
+* **URL del Panel**: [https://panel.vellix.host](https://panel.vellix.host)
+* **Usuario / Correo electrónico**: Tu dirección de correo electrónico registrada.
+* **Contraseña Temporal**: Una contraseña segura y autogenerada.
 
 ---
 
-## Step 3: Navigating Your Dashboard
+## Paso 2: Iniciar Sesión en Reviactyl
 
-Once logged in, you will be greeted by the **Reviactyl** dashboard listing your active servers.
+1. Haz clic en el enlace [panel.vellix.host](https://panel.vellix.host) para abrir la pantalla de inicio de sesión.
+2. Introduce tu dirección de correo electrónico y la contraseña temporal proporcionada en el correo.
+3. Haz clic en el botón **"Iniciar sesión"**.
 
-Each server card displays:
-* **Server Name** (e.g., *My Minecraft Server*).
-* **Unique ID** (e.g., `a1b2c3d4`).
-* **Connection IP & Port** (e.g., `190.22.44.112:25565`).
-* **Real-time Status** (Green dot for online, red for offline, yellow/grey during boot/installation).
-* **Resource Metrics** (Live CPU and RAM utilization).
+---
 
-To start managing your server, simply **click on the server's card**. This will open the server's interactive **Console** and control options.
+## Paso 3: Navegar por tu Panel de Control
+
+Una vez que hayas iniciado sesión, serás recibido por el panel de control de **Reviactyl** con la lista de tus servidores activos.
+
+Cada tarjeta de servidor muestra:
+* **Nombre del Servidor** (por ejemplo, *Mi Servidor de Minecraft*).
+* **ID Único** (por ejemplo, `a1b2c3d4`).
+* **IP y Puerto de Conexión** (por ejemplo, `190.22.44.112:25565`).
+* **Estado en Tiempo Real** (punto verde para en línea, rojo para fuera de línea, amarillo/gris durante el inicio/instalación).
+* **Métricas de Recursos** (utilización de CPU y RAM en vivo).
+
+Para empezar a gestionar tu servidor, simplemente **haz clic en la tarjeta del servidor**. Esto abrirá la **Consola** interactiva y las opciones de control.
 
 > [!WARNING]
-> Do not share your primary account password with anyone. If you need developers, builders, or admins to help you set up or manage your server, use the **Subusers** feature to grant them customized, limited access instead.
+> No compartas la contraseña principal de tu cuenta con nadie. Si necesitas que desarrolladores, constructores o administradores te ayuden a configurar o gestionar tu servidor, utiliza la función de **Subusuarios** en su lugar para concederles un acceso limitado y personalizado.
