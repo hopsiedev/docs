@@ -25,6 +25,7 @@
                 "pages": [
                   "introduction",
                   "getting-started/access",
+                  "getting-started/bot-hosting",
                   "getting-started/security",
                   "getting-started/billing"
                 ]
@@ -74,6 +75,7 @@
                 "pages": [
                   "es/introduction",
                   "es/getting-started/access",
+                  "es/getting-started/bot-hosting",
                   "es/getting-started/security",
                   "es/getting-started/billing"
                 ]
@@ -123,6 +125,7 @@
                 "pages": [
                   "pt/introduction",
                   "pt/getting-started/access",
+                  "pt/getting-started/bot-hosting",
                   "pt/getting-started/security",
                   "pt/getting-started/billing"
                 ]
@@ -172,6 +175,7 @@
                 "pages": [
                   "fr/introduction",
                   "fr/getting-started/access",
+                  "fr/getting-started/bot-hosting",
                   "fr/getting-started/security",
                   "fr/getting-started/billing"
                 ]
