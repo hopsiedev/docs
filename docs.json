@@ -12,38 +12,45 @@
     "light": "#a3e635",
     "dark": "#6b21a8"
   },
-  "navigation": [
-    {
-      "group": "Getting Started",
-      "pages": [
-        "introduction",
-        "getting-started/access",
-        "getting-started/security"
-      ]
-    },
-    {
-      "group": "Server Management",
-      "pages": [
-        "management/console",
-        "management/files",
-        "management/sftp"
-      ]
-    },
-    {
-      "group": "Databases & Backups",
-      "pages": [
-        "databases/mysql",
-        "backups/backups"
-      ]
-    },
-    {
-      "group": "Customization & Team",
-      "pages": [
-        "customization/install-mods",
-        "collaboration/subusers"
-      ]
-    }
-  ],
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "getting-started/access",
+              "getting-started/security"
+            ]
+          },
+          {
+            "group": "Server Management",
+            "pages": [
+              "management/console",
+              "management/files",
+              "management/sftp"
+            ]
+          },
+          {
+            "group": "Databases & Backups",
+            "pages": [
+              "databases/mysql",
+              "backups/backups"
+            ]
+          },
+          {
+            "group": "Customization & Team",
+            "pages": [
+              "customization/install-mods",
+              "collaboration/subusers"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "navbar": {
     "links": [
       {
