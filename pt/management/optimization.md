@@ -1,6 +1,6 @@
 # Server Optimization & Performance Tips
 
-Lag and rubber-banding can ruin the player experience. While Vellix Hosting provides high-frequency Ryzen 9 processors and fast NVMe SSDs, unoptimized server software, heavy mod configurations, or excessive entity counts can still degrade performance. 
+Lag and rubber-banding can ruin the player experience. While Vellix Hosting provides high-frequency Ryzen 9 processors and fast NVMe SSDs, unoptimized server software, heavy mod configurations, or excessive entity counts can still degrade performance.
 
 Follow these professional optimization tips to keep your server running at a solid 20 TPS (Ticks Per Second).
 
@@ -22,7 +22,7 @@ Generating new chunks on-the-fly when players fly around with Elytras or run fas
 
 ---
 
-## 2. Optimize Server Configuration Files
+2. ## Optimize Server Configuration Files
 
 If you are running a Minecraft server, use **Paper** or **Purpur** instead of Vanilla or Spigot. They contain advanced performance patches.
 
@@ -38,7 +38,7 @@ Open the following files in the **Web File Manager** and adjust these values:
 
 ---
 
-## 3. Garbage Collection & Memory Tips
+3. ## Garbage Collection & Memory Tips
 
 * **Use Modern Java Versions:** Newer Java versions (like Java 21) have superior garbage collection (ZGC / G1GC) that reduces lag spikes during memory cleanup.
 * **Avoid Bloated Modpacks:** Each active mod increases memory footprint. Remove aesthetic-only mods that aren't critical to gameplay, or mods that perform excessive ticking calculations.

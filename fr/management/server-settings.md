@@ -17,7 +17,7 @@ Your server is assigned a primary IP and port (e.g., `190.22.44.112:25565`). Som
 
 ---
 
-## 2. Modifying Startup Options
+2. ## Modifying Startup Options
 
 The **"Startup"** tab contains key environment variables that determine how the game server executable is launched:
 

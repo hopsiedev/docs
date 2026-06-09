@@ -12,7 +12,7 @@ Before uploading files, you must know what your server software supports:
 
 ---
 
-## 2. Installing Individual Plugins or Mods
+2. ## Installing Individual Plugins or Mods
 
 1. Download the `.jar` files for the plugins/mods you want to use from trusted sources (e.g., CurseForge, Modrinth, or SpigotMC).
    * *Make sure they are compatible with the game version your server is running.*
@@ -27,7 +27,7 @@ Before uploading files, you must know what your server software supports:
 
 ---
 
-## 3. Installing a Complete Modpack (e.g., CurseForge server pack)
+3. ## Installing a Complete Modpack (e.g., CurseForge server pack)
 
 To run a pre-packaged modpack (like RLCraft, Pixelmon, or Better MC):
 

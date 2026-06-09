@@ -18,7 +18,7 @@ Every game server on Vellix Hosting has its own unique SFTP connection details:
 
 ---
 
-## 2. Connecting with FileZilla (Recommended)
+2. ## Connecting with FileZilla (Recommended)
 
 [FileZilla](https://filezilla-project.org/) is a free, cross-platform SFTP client available for Windows, macOS, and Linux.
 
@@ -35,7 +35,7 @@ Every game server on Vellix Hosting has its own unique SFTP connection details:
 
 ---
 
-## 3. Connecting with WinSCP (Windows Only)
+3. ## Connecting with WinSCP (Windows Only)
 
 [WinSCP](https://winscp.net/) is a popular, free Windows-only utility for secure transfers.
 

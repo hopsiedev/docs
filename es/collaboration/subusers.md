@@ -18,7 +18,7 @@ To add a new subuser:
 
 ---
 
-## 2. Managing Granular Permissions
+2. ## Managing Granular Permissions
 
 You can customize exactly what each subuser can do on your server. Permissions are divided into logical categories:
 
@@ -44,7 +44,7 @@ You can customize exactly what each subuser can do on your server. Permissions a
 
 ---
 
-## 3. Revoking or Editing Access
+3. ## Revoking or Editing Access
 
 You can modify a subuser's permissions or remove their access entirely at any time:
 

@@ -22,7 +22,7 @@ The database will be created instantly and added to the list.
 
 ---
 
-## 2. Retrieving Database Credentials
+2. ## Retrieving Database Credentials
 
 Once your database is created, you will see a card with the connection parameters. Click on the lock icon to reveal the password:
 
@@ -34,7 +34,7 @@ Once your database is created, you will see a card with the connection parameter
 
 ---
 
-## 3. Configuring Your Plugin (Example: LuckPerms)
+3. ## Configuring Your Plugin (Example: LuckPerms)
 
 To connect a plugin to your new database, open the plugin's configuration file (usually `config.yml` or `config.conf`) in the **Web File Manager**:
 

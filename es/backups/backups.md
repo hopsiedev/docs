@@ -20,7 +20,7 @@ The panel will pack your files into a secure archive in the background. The back
 
 ---
 
-## 2. Restoring or Downloading a Backup
+2. ## Restoring or Downloading a Backup
 
 Once a backup is created, click the three dots `...` on the backup card to open the action menu:
 
@@ -33,7 +33,7 @@ Once a backup is created, click the three dots `...` on the backup card to open 
 
 ---
 
-## 3. Scheduling Automatic Backups
+3. ## Scheduling Automatic Backups
 
 Creating backups manually is helpful, but automating the process ensures you never lose progress even if you forget to run them. You can configure a backup schedule under the **"Schedules"** tab:
 

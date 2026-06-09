@@ -13,7 +13,7 @@ Your billing and services are managed via [billing.vellix.host](https://billing.
 
 ---
 
-## 2. Upgrading or Downgrading a Server
+2. ## Upgrading or Downgrading a Server
 
 As your server community grows, you might need more RAM, CPU, or disk space. You can scale your server at any time without losing any data:
 
@@ -27,7 +27,7 @@ As your server community grows, you might need more RAM, CPU, or disk space. You
 
 ---
 
-## 3. Account Credit & Auto-Renewals
+3. ## Account Credit & Auto-Renewals
 
 To prevent your servers from being suspended due to failed card payments or forgot renewals:
 * You can add funds to your account balance under **Billing** -> **Add Funds**.
@@ -36,7 +36,7 @@ To prevent your servers from being suspended due to failed card payments or forg
 
 ---
 
-## 4. Opening a Support Ticket
+4. ## Opening a Support Ticket
 
 If you run into technical issues that cannot be resolved using this documentation:
 

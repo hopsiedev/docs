@@ -22,7 +22,7 @@ In the upper-right corner or sidebar of the Console dashboard, you will find fou
 The Reviactyl panel displays continuous, real-time graphs representing your server's resource utilization:
 
 1. **CPU Usage:** The percentage of processing power being used. If it remains near 100% for long periods, players may experience lag (consider optimizing plugins, mods, or upgrading your plan).
-2. **Memory Usage (RAM):** Displays the current memory allocated compared to your plan limit (e.g., `4 GB / 8 GB`). 
+2. **Memory Usage (RAM):** Displays the current memory allocated compared to your plan limit (e.g., `4 GB / 8 GB`).
    * *If the server exceeds its memory limit, the panel's built-in OOM (Out Of Memory) killer will automatically stop the server to protect node stability. Optimize your game files or upgrade your plan if you hit this limit frequently.*
 3. **Disk Usage:** Total storage space consumed by your game files (mods, worlds, logs, backups). Make sure to delete old log files (`latest.log`, `debug.log`) or old backups to free up disk space.
 
