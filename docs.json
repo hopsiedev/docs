@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "palm",
+  "theme": "aspen",
   "name": "Vellix Hosting",
   "logo": {
     "light": "/logo/light.svg",
@@ -231,10 +231,9 @@
   },
   "footer": {
     "socials": {
-      "x": "https://twitter.com/vellixhosting",
-      "youtube": "https://youtube.com/@vellixhosting",
+      "x": "https://twitter.com/Vellixhost",
+      "youtube": "https://www.youtube.com/@VellixHost",
       "instagram": "https://instagram.com/vellixhosting",
-      "facebook": "https://facebook.com/vellixhosting",
       "discord": "https://discord.gg/EkzDkWNRXp"
     },
     "columns": [
@@ -318,5 +317,8 @@
         ]
       }
     ]
+  },
+  "thumbnails": {
+    "appearance": "dark"
   }
 }
