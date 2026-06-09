@@ -15,7 +15,7 @@ To help you manage your services efficiently, we recommend bookmarking the follo
 | **Client Area (Billing)** | [billing.vellix.host](https://billing.vellix.host) | Manage invoices, renewals, and orders. |
 | **Game Server Panel** | [panel.vellix.host](https://panel.vellix.host) | Access console, upload files, and manage databases. |
 | **Network Status** | [status.vellix.host](https://status.vellix.host) | Check real-time node operational status and latency. |
-| **Discord Support** | [discord.gg/vellix](https://discord.gg/vellix) | Join our community, read updates, and open support tickets. |
+| **Discord Support** | [discord.com/vellix](https://discord.com/invite/EkzDkWNRXp) | Join our community, read updates, and open support tickets. |
 
 ---
 
@@ -39,4 +39,4 @@ This documentation is organized into four main sections to help you find what yo
 </CardGroup>
 
 > [!TIP]
-> Need specialized support? Our technical team is available 24/7. Open a ticket in our [Discord Server](https://discord.gg/vellix) and we will assist you as soon as possible.
+> Need specialized support? Our technical team is available 24/7. Open a ticket in our [Discord Server](https://discord.com/invite/EkzDkWNRXp) and we will assist you as soon as possible.
