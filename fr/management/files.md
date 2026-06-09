@@ -1,42 +1,42 @@
-# Web File Manager
+# Gestionnaire de fichiers Web
 
-The **File Manager** (found under the **Files** tab in the sidebar menu) allows you to manage all your server data directly from your web browser without requiring external software.
-
----
-
-## Basic File Operations
-
-When you open the File Manager, you will see your server's root directory. From here, you can perform several core actions:
-
-* **Create Files & Folders:** Click the **"Create File"** or **"New Folder"** buttons in the upper-right corner.
-* **Edit Files:** Click on any text-based file (such as `.yml`, `.json`, `.conf`, `.properties`, or `.txt`). This opens an **integrated code editor** with syntax highlighting. After making your changes, click **"Save Content"** at the bottom.
-* **Upload Files:** Drag and drop files from your computer directly into the browser window, or click the **"Upload"** button to browse and select files.
-  > [!TIP]
-  > The web file manager is perfect for individual configuration edits or uploading smaller files (under 100 MB). For larger transfers (such as entire maps, worlds, or large modpacks), we recommend connecting via **SFTP**.
+Le **Gestionnaire de fichiers** (situé sous l'onglet **Fichiers** dans le menu de la barre latérale) vous permet de gérer toutes les données de votre serveur directement depuis votre navigateur Web sans nécessiter de logiciel externe.
 
 ---
 
-## Action Menu (The Three Dots `...`)
+## Opérations de base sur les fichiers
 
-To the right of each file and folder, you will find a three-dot button `...` that opens the action menu:
+Lorsque vous ouvrez le gestionnaire de fichiers, vous verrez le répertoire racine de votre serveur. À partir de là, vous pouvez effectuer plusieurs actions principales :
 
-1. **Rename:** Change the name of a file or directory.
-2. **Move / Copy:** Relocate the file. You can move files by providing their relative path (e.g., move `server.properties` into a folder by inputting `backup-configs/server.properties`).
-3. **Download:** Save the file directly onto your computer.
-4. **Delete:** Permanently remove the file or folder from the server storage.
-   > [!WARNING]
-   > Deleting files is permanent and cannot be undone. Create a backup of your server before performing bulk deletions.
+* **Créer des fichiers et des dossiers :** Cliquez sur les boutons **"Créer un fichier"** ou **"Nouveau dossier"** dans le coin supérieur droit.
+* **Modifier les fichiers :** Cliquez sur n'importe quel fichier texte (tel que `.yml`, `.json`, `.conf`, `.properties` ou `.txt`). Cela ouvre un **éditeur de code intégré** avec coloration syntaxique. Après avoir effectué vos modifications, cliquez sur **"Enregistrer le contenu"** en bas.
+* **Télécharger des fichiers :** Faites glisser et déposez des fichiers depuis votre ordinateur directement dans la fenêtre du navigateur, ou cliquez sur le bouton **"Télécharger"** pour parcourir et sélectionner les fichiers.
+  > [!TIP] 
+  > Le gestionnaire de fichiers Web est parfait pour les modifications de configuration individuelles ou le téléchargement de fichiers plus petits (moins de 100 Mo). Pour les transferts plus importants (tels que des cartes entières, des mondes ou de grands modpacks), nous vous recommandons de vous connecter via **SFTP**.
 
 ---
 
-## Compressing & Extracting Archives (.zip)
+## Menu d'action (Les trois points `...`)
 
-Uploading folders containing hundreds of individual small files (such as modpacks or plugin configurations) one-by-one is highly inefficient. Instead:
+À droite de chaque fichier et dossier, vous trouverez un bouton à trois points `...` qui ouvre le menu d'action :
 
-1. Compress the folder on your computer into a `.zip` archive.
-2. Upload the single `.zip` file to the panel (via the Web File Manager or SFTP).
-3. In the Web File Manager, click the three dots `...` next to the uploaded `.zip` file.
-4. Select **"Unarchive"** or **"Decompress"**. The panel will extract all files and subfolders instantly.
-5. *(Optional)* Delete the uploaded `.zip` file to save disk space.
+1. **Renommer :** Modifiez le nom d'un fichier ou d'un répertoire.
+2. **Déplacer/Copier :** Déplacez le fichier. Vous pouvez déplacer des fichiers en fournissant leur chemin relatif (par exemple, déplacez `server.properties` dans un dossier en saisissant `backup-configs/server.properties`).
+3. **Télécharger :** Enregistrez le fichier directement sur votre ordinateur.
+4. **Supprimer :** Supprimez définitivement le fichier ou le dossier du stockage du serveur.
+   > [!WARNING] 
+   > La suppression de fichiers est permanente et irréversible. Créez une sauvegarde de votre serveur avant d'effectuer des suppressions groupées.
 
-You can also compress files on the panel by selecting them using the checkboxes on the left, clicking the **"Archive"** button at the top, and downloading the resulting `.zip` file.
+---
+
+## Compresser et extraire des archives (.zip)
+
+Télécharger des dossiers contenant des centaines de petits fichiers individuels (tels que des modpacks ou des configurations de plugins) un par un est très inefficace. Au lieu de cela :
+
+1. Compressez le dossier sur votre ordinateur dans une archive `.zip`.
+2. Téléchargez le fichier unique `.zip` sur le panneau (via le gestionnaire de fichiers Web ou SFTP).
+3. Dans le gestionnaire de fichiers Web, cliquez sur les trois points `...` à côté du fichier `.zip` téléchargé.
+4. Sélectionnez **"Désarchiver"** ou **"Décompresser"**. Le panneau extraira instantanément tous les fichiers et sous-dossiers.
+5. *(Facultatif)* Supprimez le fichier `.zip` téléchargé pour économiser de l'espace disque.
+
+Vous pouvez également compresser des fichiers sur le panneau en les sélectionnant à l'aide des cases à cocher à gauche, en cliquant sur le bouton **"Archiver"** en haut et en téléchargeant le fichier `.zip` résultant.

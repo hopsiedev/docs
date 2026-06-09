@@ -1,52 +1,52 @@
-# Subusers & Permissions
+# Subusuários e permissões
 
-If you are running a server with a team, you might want to give your builders, developers, or co-owners access to the server dashboard. The **Subusers** feature allows you to invite other players to your panel with specific, granular permissions, ensuring they only access what they need.
-
----
-
-## 1. Inviting a Subuser
-
-To add a new subuser:
-
-1. Log in to the panel at [panel.vellix.host](https://panel.vellix.host) and select your server.
-2. Click on the **"Users"** tab in the sidebar navigation menu.
-3. Click the **"Create New"** button in the upper-right corner.
-4. Fill out the invite form:
-   * **User Email:** Enter the exact email address of the person you want to invite.
-     * *Note: If they do not have an account on the panel yet, they will receive an email invitation to set up their password and register.*
-   * **Permissions:** Select the checkboxes corresponding to the permissions you wish to grant them.
+Se você estiver executando um servidor com uma equipe, talvez queira dar aos seus construtores, desenvolvedores ou coproprietários acesso ao painel do servidor. O recurso **Subusuários** permite que você convide outros jogadores para o seu painel com permissões específicas e granulares, garantindo que eles acessem apenas o que precisam.
 
 ---
 
-2. ## Managing Granular Permissions
+## 1. Convidando um subusuário
 
-You can customize exactly what each subuser can do on your server. Permissions are divided into logical categories:
+Para adicionar um novo subusuário:
 
-### Control Console
-* **Control Power State:** Allows starting, stopping, restarting, and killing the server.
-* **Send Commands:** Allows typing and sending commands in the live console command bar.
-
-### File Management
-* **Read Files:** Allows viewing directories and opening files to read contents.
-* **Write Files:** Allows editing files, creating new ones, and uploading folders.
-* **Delete Files:** Allows deleting files and folders.
-* **SFTP Details:** Allows viewing the SFTP connection details (they will connect using their own panel username and password).
-
-### Databases & Backups
-* **Create Databases:** Allows creating and deleting MySQL databases.
-* **View Database Password:** Allows revealing database connection credentials.
-* **Create Backups:** Allows taking manual server backups.
-* **Restore Backups:** Allows reverting server files using an existing backup.
-
-### Settings & Schedules
-* **Create Schedules:** Allows scheduling tasks (restarts, backups, sending automatic messages).
-* **Edit Startup Settings:** Allows modifying environment variables and startup command options.
+1. Faça login no painel em [panel.vellix.host](https://panel.vellix.host) e selecione seu servidor.
+2. Clique na aba **"Usuários"** no menu de navegação da barra lateral.
+3. Clique no botão **"Criar novo"** no canto superior direito.
+4. Preencha o formulário de convite:
+   * **E-mail do usuário:** Digite o endereço de e-mail exato da pessoa que você deseja convidar.
+     * *Observação: Caso ainda não possua conta no painel, receberá um e-mail convite para configurar sua senha e se cadastrar.*
+   * **Permissões:** Marque as caixas de seleção correspondentes às permissões que você deseja conceder.
 
 ---
 
-3. ## Revoking or Editing Access
+## 2. Gerenciando permissões granulares
 
-You can modify a subuser's permissions or remove their access entirely at any time:
+Você pode personalizar exatamente o que cada subusuário pode fazer no seu servidor. As permissões são divididas em categorias lógicas:
 
-* **To Edit Permissions:** Go to the **"Users"** tab, click the edit icon (pencil) next to the subuser's email, check/uncheck the permissions, and click **"Save"**.
-* **To Revoke Access:** Click the delete icon (trash can) next to the subuser's email. Their access to your server dashboard will be terminated immediately.
+###Console de controle
+* **Controlar estado de energia:** Permite iniciar, parar, reiniciar e encerrar o servidor.
+* **Enviar comandos:** Permite digitar e enviar comandos na barra de comandos do console ao vivo.
+
+### Gerenciamento de arquivos
+* **Ler Arquivos:** Permite visualizar diretórios e abrir arquivos para leitura de conteúdo.
+* **Escrever arquivos:** Permite editar arquivos, criar novos e fazer upload de pastas.
+* **Excluir arquivos:** Permite excluir arquivos e pastas.
+* **Detalhes SFTP:** Permite visualizar os detalhes da conexão SFTP (eles se conectarão usando seu próprio nome de usuário e senha do painel).
+
+### Bancos de dados e backups
+* **Criar Bancos de Dados:** Permite criar e excluir bancos de dados MySQL.
+* **Ver senha do banco de dados:** Permite revelar credenciais de conexão com o banco de dados.
+* **Criar backups:** Permite fazer backups manuais do servidor.
+* **Restaurar backups:** Permite reverter arquivos do servidor usando um backup existente.
+
+### Configurações e programações
+* **Criar Agendamentos:** Permite agendar tarefas (reinicializações, backups, envio de mensagens automáticas).
+* **Editar configurações de inicialização:** Permite modificar variáveis ​​de ambiente e opções de comando de inicialização.
+
+---
+
+## 3. Revogação ou edição de acesso
+
+Você pode modificar as permissões de um subusuário ou remover totalmente seu acesso a qualquer momento:
+
+* **Para editar permissões:** Vá para a guia **"Usuários"**, clique no ícone de edição (lápis) ao lado do e-mail do subusuário, marque/desmarque as permissões e clique em **"Salvar"**.
+* **Para revogar o acesso:** Clique no ícone de exclusão (lixeira) ao lado do e-mail do subusuário. O acesso deles ao painel do seu servidor será encerrado imediatamente.

@@ -1,51 +1,51 @@
-# Uploading & Installing Mods/Plugins
+# Carregando e instalando mods/plugins
 
-Customizing your server with mods, plugins, or custom game modes is one of the best ways to enhance the gameplay experience. This guide will walk you through installing individual plugins, mods, and entire server modpacks on your Vellix Hosting server.
-
----
-
-## 1. Plugins vs. Mods: Which does my server use?
-
-Before uploading files, you must know what your server software supports:
-* **Plugins (Spigot, Paper, Purpur):** Extend server functionality (like adding claims, economy, or chat prefixes) without requiring players to install anything on their computers.
-* **Mods (Forge, Fabric, NeoForge):** Add custom blocks, items, creatures, and dimensions. **Both the server and the players must have the exact same mods installed.**
+Personalizar seu servidor com mods, plug-ins ou modos de jogo personalizados é uma das melhores maneiras de aprimorar a experiência de jogo. Este guia irá orientá-lo na instalação de plug-ins individuais, mods e modpacks de servidor inteiros em seu servidor Vellix Hosting.
 
 ---
 
-2. ## Installing Individual Plugins or Mods
+## 1. Plugins vs. Mods: O que meu servidor usa?
 
-1. Download the `.jar` files for the plugins/mods you want to use from trusted sources (e.g., CurseForge, Modrinth, or SpigotMC).
-   * *Make sure they are compatible with the game version your server is running.*
-2. Stop your server from the **Console**.
-3. Open the **Web File Manager** or connect via **SFTP**.
-4. Navigate to the appropriate folder:
-   * For Spigot/Paper/Purpur plugins: Upload the `.jar` files to the **`plugins/`** directory.
-   * For Forge/Fabric mods: Upload the `.jar` files to the **`mods/`** directory.
-5. Go back to the **Console** and click **Start** or **Restart**.
-6. Verify they loaded correctly:
-   * In Minecraft, run the command `plugins` in the console (or `/plugins` in-game) to see your active plugins.
+Antes de enviar arquivos, você deve saber o que o software do seu servidor suporta:
+* **Plugins (Spigot, Paper, Purpur):** Amplie a funcionalidade do servidor (como adicionar reivindicações, economia ou prefixos de bate-papo) sem exigir que os jogadores instalem nada em seus computadores.
+* **Mods (Forge, Fabric, NeoForge):** Adicione blocos, itens, criaturas e dimensões personalizados. **Tanto o servidor quanto os jogadores devem ter exatamente os mesmos mods instalados.**
 
 ---
 
-3. ## Installing a Complete Modpack (e.g., CurseForge server pack)
+## 2. Instalação de plug-ins ou mods individuais
 
-To run a pre-packaged modpack (like RLCraft, Pixelmon, or Better MC):
-
-1. Download the **Server Pack** files for the modpack (usually a `.zip` archive containing the `mods`, `config`, and libraries folders).
-2. Stop your server.
-3. Open your **SFTP** client and connect to the server.
-4. If you have existing files, you should back them up first, then delete them from the server directory to avoid conflicts.
-5. Upload the modpack `.zip` archive to the root directory of your server.
-6. Open the **Web File Manager** in your browser, locate the uploaded `.zip` file, click the three dots `...` and choose **"Unarchive"** to extract all files.
-7. Verify the startup settings:
-   * Under the **"Startup"** tab in the sidebar, ensure you have selected the correct **Java Version** required by the modpack (e.g., Java 17 for Minecraft 1.18+, Java 21 for Minecraft 1.20.5+).
-   * Ensure the **Server Jar File** or startup parameters match the modpack launch script requirements.
-8. Go back to the **Console** and click **Start**.
+1. Baixe os arquivos `.jar` para os plug-ins/mods que deseja usar de fontes confiáveis (por exemplo, CurseForge, Modrinth ou SpigotMC).
+   * *Certifique-se de que eles sejam compatíveis com a versão do jogo que seu servidor está executando.*
+2. Pare o servidor no **Console**.
+3. Abra o **Web File Manager** ou conecte-se via **SFTP**.
+4. Navegue até a pasta apropriada:
+   * Para plug-ins Spigot/Paper/Purpur: Carregue os arquivos `.jar` para o diretório **`plugins/`**.
+   * Para mods Forge/Fabric: Carregue os arquivos `.jar` para o diretório **`mods/`**.
+5. Volte para o **Console** e clique em **Iniciar** ou **Reiniciar**.
+6. Verifique se eles foram carregados corretamente:
+   * No Minecraft, execute o comando `plugins` no console (ou `/plugins` no jogo) para ver seus plugins ativos.
 
 ---
 
-## Troubleshooting Common Issues
+## 3. Instalando um Modpack completo (por exemplo, pacote de servidor CurseForge)
 
-* **Server is stuck in a boot loop:** Check the console log. If you see `java.lang.UnsupportedClassVersionError`, it means your Java version is outdated or too new for your game version. Change the Java version in the **Startup** tab.
-* **Missing dependency error:** Some mods or plugins require other core library mods to work. Read the mod/plugin description page and upload the missing dependencies to your server folder.
-* **Modpack not loading custom blocks:** Check that you uploaded the mod files to the server's `mods/` directory, and that you have installed the exact same modpack version on your local launcher (CurseForge App, Modrinth App, Prism Launcher).
+Para executar um modpack pré-empacotado (como RLCraft, Pixelmon ou Better MC):
+
+1. Baixe os arquivos do **Server Pack** para o modpack (geralmente um arquivo `.zip` contendo as pastas `mods`, `config` e bibliotecas).
+2. Pare seu servidor.
+3. Abra seu cliente **SFTP** e conecte-se ao servidor.
+4. Se você tiver arquivos existentes, primeiro faça backup deles e depois exclua-os do diretório do servidor para evitar conflitos.
+5. Carregue o arquivo modpack `.zip` para o diretório raiz do seu servidor.
+6. Abra o **Gerenciador de arquivos da Web** em seu navegador, localize o arquivo `.zip` carregado, clique nos três pontos `...` e escolha **"Desarquivar"** para extrair todos os arquivos.
+7. Verifique as configurações de inicialização:
+   * Na guia **"Inicialização"** na barra lateral, certifique-se de ter selecionado a **versão Java** correta exigida pelo modpack (por exemplo, Java 17 para Minecraft 1.18+, Java 21 para Minecraft 1.20.5+).
+   * Certifique-se de que o **Arquivo Jar do Servidor** ou os parâmetros de inicialização correspondam aos requisitos do script de inicialização do modpack.
+8. Volte para o **Console** e clique em **Iniciar**.
+
+---
+
+## Solução de problemas comuns
+
+* **O servidor está preso em um loop de inicialização:** Verifique o log do console. Se você vir `java.lang.UnsupportedClassVersionError`, significa que sua versão do Java está desatualizada ou muito nova para a versão do jogo. Altere a versão do Java na guia **Inicialização**.
+* **Erro de dependência ausente:** Alguns mods ou plug-ins exigem que outros mods da biblioteca principal funcionem. Leia a página de descrição do mod/plugin e carregue as dependências ausentes na pasta do servidor.
+* **Modpack não carrega blocos personalizados:** Verifique se você carregou os arquivos mod para o diretório `mods/` do servidor e se instalou exatamente a mesma versão do modpack em seu inicializador local (CurseForge App, Modrinth App, Prism Launcher).

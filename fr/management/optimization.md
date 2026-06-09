@@ -1,45 +1,45 @@
-# Server Optimization & Performance Tips
+# Conseils d'optimisation et de performances du serveur
 
-Lag and rubber-banding can ruin the player experience. While Vellix Hosting provides high-frequency Ryzen 9 processors and fast NVMe SSDs, unoptimized server software, heavy mod configurations, or excessive entity counts can still degrade performance.
+Le décalage et les élastiques peuvent gâcher l’expérience du joueur. Bien que Vellix Hosting fournisse des processeurs Ryzen 9 haute fréquence et des SSD NVMe rapides, un logiciel serveur non optimisé, des configurations de modules lourdes ou un nombre excessif d'entités peuvent toujours dégrader les performances. 
 
-Follow these professional optimization tips to keep your server running at a solid 20 TPS (Ticks Per Second).
-
----
-
-## 1. Pre-Generate Your World (Critical for Minecraft)
-
-Generating new chunks on-the-fly when players fly around with Elytras or run fast is the #1 cause of server lag. It stresses both the CPU and disk read/write cycles.
-
-### How to pre-generate chunks:
-1. Install the **Chunky** plugin (compatible with Spigot, Paper, Fabric, Forge).
-2. Stop your server.
-3. In `server.properties`, set your world border size (e.g., a radius of 5,000 blocks).
-4. Start the server and run these commands in the **Console**:
-   * `chunky center 0 0` (sets the generation center).
-   * `chunky radius 5000` (sets the generation radius).
-   * `chunky start` (starts the generation process).
-5. Let Chunky complete the task before allowing players to join. It may take several hours depending on the radius. Once finished, chunk loading lag will be virtually eliminated.
+Suivez ces conseils d'optimisation professionnels pour que votre serveur continue de fonctionner à un bon taux de 20 TPS (Ticks Per Second).
 
 ---
 
-2. ## Optimize Server Configuration Files
+## 1. Pré-générez votre monde (critique pour Minecraft)
 
-If you are running a Minecraft server, use **Paper** or **Purpur** instead of Vanilla or Spigot. They contain advanced performance patches.
+Générer de nouveaux morceaux à la volée lorsque les joueurs volent avec Elytras ou courent vite est la cause n°1 du décalage du serveur. Il met l'accent à la fois sur les cycles de lecture/écriture du processeur et du disque.
 
-Open the following files in the **Web File Manager** and adjust these values:
+### Comment pré-générer des morceaux :
+1. Installez le plugin **Chunky** (compatible avec Spigot, Paper, Fabric, Forge).
+2. Arrêtez votre serveur.
+3. Dans `server.properties`, définissez la taille de votre frontière mondiale (par exemple, un rayon de 5 000 blocs).
+4. Démarrez le serveur et exécutez ces commandes dans la **Console** :
+   * `chunky center 0 0` (définit le centre de génération).
+   * `chunky radius 5000` (définit le rayon de génération).
+   * `chunky start` (démarre le processus de génération).
+5. Laissez Chunky terminer la tâche avant de permettre aux joueurs de la rejoindre. Cela peut prendre plusieurs heures selon le rayon. Une fois terminé, le décalage de chargement des morceaux sera pratiquement éliminé.
+
+---
+
+## 2. Optimiser les fichiers de configuration du serveur
+
+Si vous utilisez un serveur Minecraft, utilisez **Paper** ou **Purpur** au lieu de Vanilla ou Spigot. Ils contiennent des correctifs de performances avancés.
+
+Ouvrez les fichiers suivants dans **Web File Manager** et ajustez ces valeurs :
 
 ### `server.properties`
-* `view-distance=6` (Controls how many chunks are sent to the client. Values between 6 and 8 are recommended).
-* `simulation-distance=4` (Controls which chunks active entities and ticks run in. Lowering this to 4 or 5 drastically reduces CPU load).
+* `view-distance=6` (Contrôle le nombre de morceaux envoyés au client. Des valeurs comprises entre 6 et 8 sont recommandées).
+* `simulation-distance=4` (Contrôle les entités actives et les ticks qui s'exécutent. Le réduire à 4 ou 5 réduit considérablement la charge du processeur).
 
-### `paper-world-defaults.yml` (or `spigot.yml`)
-* **Entity activation ranges:** Lower the distance at which animals, monsters, and miscellaneous items tick.
-* **Max entity collisions:** Limit how many times entities check for collisions per tick (e.g., set `max-entity-collisions=2`).
+### `paper-world-defaults.yml` (ou `spigot.yml`)
+* **Plages d'activation des entités :** Réduisez la distance à laquelle les animaux, les monstres et les objets divers se déplacent.
+* **Maximum de collisions d'entités :** Limitez le nombre de fois où les entités vérifient les collisions par tick (par exemple, définissez `max-entity-collisions=2`).
 
 ---
 
-3. ## Garbage Collection & Memory Tips
+## 3. Conseils pour la collecte des déchets et la mémoire
 
-* **Use Modern Java Versions:** Newer Java versions (like Java 21) have superior garbage collection (ZGC / G1GC) that reduces lag spikes during memory cleanup.
-* **Avoid Bloated Modpacks:** Each active mod increases memory footprint. Remove aesthetic-only mods that aren't critical to gameplay, or mods that perform excessive ticking calculations.
-* **Monitor Logs for Spam:** If a plugin is throwing errors in your Console constantly, it will write thousands of lines to your disk, creating disk lag. Repair the configuration or remove the faulty plugin.
+* **Utilisez les versions Java modernes :** Les versions Java plus récentes (comme Java 21) disposent d'un garbage collection supérieur (ZGC / G1GC) qui réduit les pics de décalage lors du nettoyage de la mémoire.
+* **Évitez les modpacks gonflés :** Chaque mod actif augmente l'empreinte mémoire. Supprimez les mods uniquement esthétiques qui ne sont pas essentiels au gameplay, ou les mods qui effectuent des calculs de ticking excessifs.
+* **Surveillez les journaux pour détecter le spam :** Si un plugin génère constamment des erreurs dans votre console, il écrira des milliers de lignes sur votre disque, créant ainsi un décalage de disque. Réparez la configuration ou supprimez le plugin défectueux.

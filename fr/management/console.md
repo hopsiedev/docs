@@ -1,37 +1,37 @@
-# Console & Power Controls
+# Console et commandes d'alimentation
 
-The **Console** is the primary interface for interacting directly with your game server. In this guide, you will learn how to monitor hardware usage, send game commands, and manage your server's power states.
-
----
-
-## Power Controls (Action Buttons)
-
-In the upper-right corner or sidebar of the Console dashboard, you will find four main power control buttons:
-
-* **Start:** Powers on the server container and launches the game process. Use this if your server is currently "Offline".
-* **Stop:** Sends a graceful shutdown signal to the game (e.g., executing `/stop` or `/save-all` in Minecraft). This saves your progress and safely shuts down the server.
-* **Restart:** Gracefully stops the game and boots it back up immediately. Ideal for applying configuration changes or clearing RAM cache.
-* **Kill:** Instantly terminates the game process without saving.
-  > [!CAUTION]
-  > **Only use "Kill" if your server is completely frozen or unresponsive to the "Stop" command.** Using Kill regularly can cause file corruption, rollback your world progress, or corrupt database entries.
+La **Console** est l'interface principale pour interagir directement avec votre serveur de jeu. Dans ce guide, vous apprendrez à surveiller l'utilisation du matériel, à envoyer des commandes de jeu et à gérer les états d'alimentation de votre serveur.
 
 ---
 
-## Real-Time Monitoring Graphs
+## Commandes d'alimentation (boutons d'action)
 
-The Reviactyl panel displays continuous, real-time graphs representing your server's resource utilization:
+Dans le coin supérieur droit ou dans la barre latérale du tableau de bord de la console, vous trouverez quatre boutons principaux de contrôle de l'alimentation :
 
-1. **CPU Usage:** The percentage of processing power being used. If it remains near 100% for long periods, players may experience lag (consider optimizing plugins, mods, or upgrading your plan).
-2. **Memory Usage (RAM):** Displays the current memory allocated compared to your plan limit (e.g., `4 GB / 8 GB`).
-   * *If the server exceeds its memory limit, the panel's built-in OOM (Out Of Memory) killer will automatically stop the server to protect node stability. Optimize your game files or upgrade your plan if you hit this limit frequently.*
-3. **Disk Usage:** Total storage space consumed by your game files (mods, worlds, logs, backups). Make sure to delete old log files (`latest.log`, `debug.log`) or old backups to free up disk space.
+* **Démarrer :** Allume le conteneur du serveur et lance le processus de jeu. Utilisez-le si votre serveur est actuellement "Hors ligne".
+* **Stop :** Envoie un signal d'arrêt progressif au jeu (par exemple, en exécutant `/stop` ou `/save-all` dans Minecraft). Cela enregistre votre progression et arrête le serveur en toute sécurité.
+* **Redémarrer :** Arrête gracieusement le jeu et redémarre-le immédiatement. Idéal pour appliquer des modifications de configuration ou vider le cache RAM.
+* **Kill :** Termine instantanément le processus de jeu sans enregistrer.
+  > [!CAUTION] 
+  > **Utilisez "Kill" uniquement si votre serveur est complètement gelé ou ne répond pas à la commande "Stop".** L'utilisation régulière de Kill peut provoquer une corruption de fichiers, annuler votre progression dans le monde ou corrompre des entrées de base de données.
 
 ---
 
-## Sending Console Commands
+## Graphiques de surveillance en temps réel
 
-Below the live black terminal screen, there is a text command bar labeled **"Type a command..."**:
+Le panneau Reviactyl affiche des graphiques continus en temps réel représentant l'utilisation des ressources de votre serveur :
 
-* You can type any command here to control the game directly from the console without needing in-game administrator privileges.
-* **Do not prefix commands with a slash (`/`)**. For example, type `op PlayerName` or `say Hello World` and press Enter.
-* Any responses or errors from the game server will print in real-time on the console log above.
+1. **Utilisation du processeur :** Pourcentage de puissance de traitement utilisée. S'il reste proche de 100 % pendant de longues périodes, les joueurs peuvent rencontrer un décalage (pensez à optimiser les plugins, les mods ou à mettre à niveau votre plan).
+2. **Utilisation de la mémoire (RAM) :** Affiche la mémoire actuellement allouée par rapport à la limite de votre plan (par exemple, `4 GB / 8 GB`). 
+   * *Si le serveur dépasse sa limite de mémoire, le tueur MOO (Out Of Memory) intégré au panneau arrêtera automatiquement le serveur pour protéger la stabilité du nœud. Optimisez vos fichiers de jeu ou mettez à niveau votre forfait si vous atteignez fréquemment cette limite.*
+3. **Utilisation du disque :** Espace de stockage total consommé par vos fichiers de jeu (mods, mondes, journaux, sauvegardes). Assurez-vous de supprimer les anciens fichiers journaux (`latest.log`, `debug.log`) ou les anciennes sauvegardes pour libérer de l'espace disque.
+
+---
+
+## Envoi de commandes de console
+
+Sous l'écran noir du terminal, se trouve une barre de commande de texte intitulée **"Tapez une commande..."** :
+
+* Vous pouvez taper n'importe quelle commande ici pour contrôler le jeu directement depuis la console sans avoir besoin des privilèges d'administrateur du jeu.
+* **Ne préfixez pas les commandes avec une barre oblique (`/`)**. Par exemple, tapez `op PlayerName` ou `say Hello World` et appuyez sur Entrée.
+* Toutes les réponses ou erreurs du serveur de jeu seront imprimées en temps réel sur le journal de la console ci-dessus.

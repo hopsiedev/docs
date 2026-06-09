@@ -1,61 +1,61 @@
-# SFTP Connection (FileZilla / WinSCP)
+# Connexion SFTP (FileZilla / WinSCP)
 
-For transferring entire folders, heavy maps, large modpacks, or doing bulk modifications on your server, the web file manager can be slow. For these tasks, using a **SFTP (Secure File Transfer Protocol)** client is the best option.
-
----
-
-## 1. Retrieve Your SFTP Credentials
-
-Every game server on Vellix Hosting has its own unique SFTP connection details:
-
-1. Log in to your server on the panel at [panel.vellix.host](https://panel.vellix.host).
-2. Click on the **"Settings"** or **"SFTP"** tab in the sidebar navigation menu.
-3. Locate the **SFTP Details** section to find:
-   * **Server Address / Host:** The address of the node hosting your server (e.g., `sftp.vellix.host` or an IP address).
-   * **Port:** Usually `2022` (the standard SFTP port for our panel daemon).
-   * **Username:** A unique user identifier formatted as `yourusername.serverid` (e.g., `admin.a1b2c3d4`).
-   * **Password:** **This is the exact same password** you use to log in to the web panel dashboard.
+Pour transférer des dossiers entiers, des cartes lourdes, des modpacks volumineux ou effectuer des modifications groupées sur votre serveur, le gestionnaire de fichiers Web peut être lent. Pour ces tâches, l'utilisation d'un client **SFTP (Secure File Transfer Protocol)** est la meilleure option.
 
 ---
 
-2. ## Connecting with FileZilla (Recommended)
+## 1. Récupérez vos identifiants SFTP
 
-[FileZilla](https://filezilla-project.org/) is a free, cross-platform SFTP client available for Windows, macOS, and Linux.
+Chaque serveur de jeu sur Vellix Hosting possède ses propres détails de connexion SFTP uniques :
 
-### Steps to connect:
-1. Launch FileZilla.
-2. In the **Quickconnect** bar at the top, fill in the following fields:
-   * **Host:** Copy and paste the *Server Address* from the panel.
-   * **Username:** Copy and paste the *Username* from the panel.
-   * **Password:** Enter your account password.
-   * **Port:** Enter `2022`.
-3. Click the **"Quickconnect"** button.
-4. If a warning prompt about an *"Unknown host key"* appears, check the box *"Always trust this host"* and click **OK**.
-5. Once connected, your computer's local files will show on the left, and your remote server directory will appear on the right. You can now drag and drop files to transfer them.
+1. Connectez-vous à votre serveur sur le panneau à l'adresse [panel.vellix.host] (https://panel.vellix.host).
+2. Cliquez sur l'onglet **"Paramètres"** ou **"SFTP"** dans le menu de navigation de la barre latérale.
+3. Localisez la section **Détails SFTP** pour rechercher :
+   * **Adresse du serveur/hôte :** L'adresse du nœud hébergeant votre serveur (par exemple, `sftp.vellix.host` ou une adresse IP).
+   * **Port :** Généralement `2022` (le port SFTP standard pour notre démon de panneau).
+   * **Nom d'utilisateur :** Un identifiant d'utilisateur unique au format `yourusername.serverid` (par exemple, `admin.a1b2c3d4`).
+   * **Mot de passe :** **Il s'agit exactement du même mot de passe** que vous utilisez pour vous connecter au tableau de bord du panneau Web.
 
 ---
 
-3. ## Connecting with WinSCP (Windows Only)
+## 2. Connexion avec FileZilla (recommandé)
 
-[WinSCP](https://winscp.net/) is a popular, free Windows-only utility for secure transfers.
+[FileZilla](https://filezilla-project.org/) est un client SFTP multiplateforme gratuit disponible pour Windows, macOS et Linux.
 
-### Steps to connect:
-1. Open WinSCP.
-2. In the **Login** window, configure the following:
-   * **File protocol:** Select **SFTP**.
-   * **Host name:** Enter the *Server Address* from the panel.
-   * **Port number:** Enter `2022`.
-   * **User name:** Enter your *Username* from the panel.
-   * **Password:** Enter your account password.
-3. Click **"Login"** (or click **"Save"** to store this session for easier future access).
-4. Accept the server host key warning on your first connection.
+### Étapes pour se connecter :
+1. Lancez FileZilla.
+2. Dans la barre **Quickconnect** en haut, remplissez les champs suivants :
+   * **Hôte :** Copiez et collez l'*Adresse du serveur* à partir du panneau.
+   * **Nom d'utilisateur :** Copiez et collez le *Nom d'utilisateur* à partir du panneau.
+   * **Mot de passe :** Saisissez le mot de passe de votre compte.
+   * **Port :** Entrez `2022`.
+3. Cliquez sur le bouton **"Connexion rapide"**.
+4. Si une invite d'avertissement concernant une *"Clé d'hôte inconnue"* apparaît, cochez la case *"Toujours faire confiance à cet hôte"* et cliquez sur **OK**.
+5. Une fois connecté, les fichiers locaux de votre ordinateur s'afficheront à gauche et le répertoire de votre serveur distant apparaîtra à droite. Vous pouvez désormais glisser et déposer des fichiers pour les transférer.
 
 ---
 
-## Essential Transfer Tips
+## 3. Connexion avec WinSCP (Windows uniquement)
 
-> [!TIP]
-> **Avoid transferring raw folders with thousands of tiny files:** Protocols like SFTP require a handshake for every single file. Transferring a folder with 2,000 mod files directly can take hours. Instead, zip the folder on your computer, upload the single `.zip` file via SFTP, and then use the web file manager's **"Unarchive"** option to extract it in seconds.
+[WinSCP](https://winscp.net/) est un utilitaire Windows uniquement populaire et gratuit pour les transferts sécurisés.
 
-> [!WARNING]
-> If you update your account password on the web panel (as described in the Security guide), your SFTP password updates instantly to match it. Don't forget to update your saved connection passwords in FileZilla or WinSCP!
+### Étapes pour se connecter :
+1. Ouvrez WinSCP.
+2. Dans la fenêtre **Connexion**, configurez les éléments suivants :
+   * **Protocole de fichier :** Sélectionnez **SFTP**.
+   * **Nom d'hôte :** Entrez l'*adresse du serveur* à partir du panneau.
+   * **Numéro de port :** Entrez `2022`.
+   * **Nom d'utilisateur :** Entrez votre *Nom d'utilisateur* dans le panneau.
+   * **Mot de passe :** Saisissez le mot de passe de votre compte.
+3. Cliquez sur **"Connexion"** (ou cliquez sur **"Enregistrer"** pour stocker cette session afin d'y accéder plus facilement ultérieurement).
+4. Acceptez l'avertissement de clé d'hôte du serveur lors de votre première connexion.
+
+---
+
+## Conseils de transfert essentiels
+
+> [!TIP] 
+> **Évitez de transférer des dossiers bruts contenant des milliers de petits fichiers :** Les protocoles comme SFTP nécessitent une poignée de main pour chaque fichier. Transférer directement un dossier contenant 2 000 fichiers mod peut prendre des heures. Au lieu de cela, compressez le dossier sur votre ordinateur, téléchargez le fichier unique `.zip` via SFTP, puis utilisez l'option **"Désarchiver"** du gestionnaire de fichiers Web pour l'extraire en quelques secondes.
+
+> [!WARNING] 
+> Si vous mettez à jour le mot de passe de votre compte sur le panneau Web (comme décrit dans le guide de sécurité), votre mot de passe SFTP se met à jour instantanément pour correspondre à celui-ci. N'oubliez pas de mettre à jour vos mots de passe de connexion enregistrés dans FileZilla ou WinSCP !
